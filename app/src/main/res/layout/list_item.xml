@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:ellipsize="marquee"
+        android:text="costTitle" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/tv_title"
+        android:text="2024-12-31" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/tv_date"
+        android:textSize="25sp"
+        android:textColor="#ffbd27"
+        android:text="25" />
+
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="deleteAccount"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="cancel"
+        android:src="@android:drawable/ic_delete" />
+</RelativeLayout>
